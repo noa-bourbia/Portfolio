@@ -38,12 +38,12 @@
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 70px;
     margin-top: 450px;
 }
 
 button {
-    padding: 30px 150px;
+    padding: 30px 210px;
     font-size: 28px;
     cursor: pointer;
     background-color: #000;
@@ -54,10 +54,11 @@ button {
 .banner-image {
     position: absolute;
     right: 5%;
-    top: 65.5%;
+    top: 50%;
     transform: translateY(-50%);
-    max-width: 200%;
+    width: 600px; /* Increase the width */
     height: auto;
+    margin-top: 49px;
 }
 
 .about-me {
