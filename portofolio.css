@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.google.com/share?selection.family=Bebas+Neue') format('woff2'),
+         url('https://fonts.google.com/share?selection.family=Bebas+Neue') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 .dark-background {
     background-color: #000;
     color: #fff;
@@ -13,6 +22,7 @@
     left: 80px;
     font-size: 24px;
     color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .center-text {
@@ -26,6 +36,8 @@
     top: 0;
     left: 0;
     transform: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
 }
 
 .content-below {
@@ -49,6 +61,8 @@ button {
     background-color: #000;
     color: #fff;
     border: 2px solid #fff; /* Add white border of 2px */
+    font-family: 'Bebas Neue', sans-serif; /* Change font to Hagrid */
+    font-weight: bold;
 }
 
 .banner-image {
