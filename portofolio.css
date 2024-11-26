@@ -63,6 +63,12 @@ button {
     border: 2px solid #fff; /* Add white border of 2px */
     font-family: 'Bebas Neue', sans-serif; /* Change font to Hagrid */
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for animation */
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .banner-image {
