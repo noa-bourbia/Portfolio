@@ -41,6 +41,16 @@
         content: "Noa Bourbia";
     }
 }
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .animated-text::before {
     content: "1234567890";
@@ -112,7 +122,25 @@ button:hover {
     background-color: #fff;
     color: #000;
 }
+.button-link {
+    display: inline-block;
+    padding: 30px 210px;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff; /* Add white border of 2px */
+    font-family: 'Bebas Neue', sans-serif; /* Change font to Hagrid */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for animation */
+}
 
+.button-link:hover {
+    background-color: #fff;
+    color: #000;
+}
 .banner-image {
     position: absolute;
     right: 5%;

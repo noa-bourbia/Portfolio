@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contactportfolio.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="portofolio.html">Accueil</a></li>
+            <li><a href="projetportfolio.html">Projects</a></li>
+            <li><a href="contactportfolio.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Contactez-moi</h1>
+    </header>
+    
+    <section class="contact-form">
+        <h2>Envoyez-moi un message</h2>
+        <form id="contactForm" action="mailto:noa.bourbia@laplateforme.io" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</body>
+</html>

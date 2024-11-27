@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" type="text/css" href="projetportfolio.css">
+</head>
+<body>
+    <nav class="navbar">
+    <ul>
+        <li><a href="portofilio.html">Accueil</a></li>
+        <li><a href="projetportfolio.html">Projects</a></li>
+        <li><a href="contactportfolio.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <header>
+        <h1>Mes Projets</h1>
+    </header>
+    
+    <section class="project-form">
+        <h2>Ajouter un nouveau projet</h2>
+        <form id="projectForm">
+            <label for="projectTitle">Titre du projet:</label>
+            <input type="text" id="projectTitle" name="projectTitle" required>
+            
+            <label for="projectDescription">Description du projet:</label>
+            <textarea id="projectDescription" name="projectDescription" required></textarea>
+            
+            <label for="projectImage">Image du projet:</label>
+            <input type="file" id="projectImage" name="projectImage" accept="image/*" required>
+            
+            <button type="submit">Ajouter le projet</button>
+        </form>
+    </section>
+    
+    <section class="project-list">
+        <h2>Projets</h2>
+        <div id="projectsContainer"></div>
+    </section>
+    
+    <script>
+        document.getElementById('projectForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('projectTitle').value;
+            const description = document.getElementById('projectDescription').value;
+            const image = document.getElementById('projectImage').files[0];
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const projectContainer = document.createElement('div');
+                projectContainer.classList.add('project');
+                
+                const projectTitle = document.createElement('h3');
+                projectTitle.textContent = title;
+                
+                const projectDescription = document.createElement('p');
+                projectDescription.textContent = description;
+                
+                const projectImage = document.createElement('img');
+                projectImage.src = e.target.result;
+                projectImage.alt = title;
+                
+                projectContainer.appendChild(projectTitle);
+                projectContainer.appendChild(projectDescription);
+                projectContainer.appendChild(projectImage);
+                
+                document.getElementById('projectsContainer').appendChild(projectContainer);
+            };
+            reader.readAsDataURL(image);
+            
+            document.getElementById('projectForm').reset();
+        });
+    </script>
+</body>
+</html>
