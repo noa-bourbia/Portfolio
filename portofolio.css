@@ -6,6 +6,48 @@
     font-style: normal;
   }
   
+  @keyframes textTransition {
+    0% {
+        content: "Ijf8456465";
+    }
+    10% {
+        content: "N85fzofjz";
+    }
+    20% {
+        content: "N034567890";
+    }
+    30% {
+        content: "NoaB06489a";
+    }
+    40% {
+        content: "NoaB0egega";
+    }
+    50% {
+        content: "NoaB0egeia";
+    }
+    60% {
+        content: "NoaB0egbia";
+    }
+    70% {
+        content: "NoaB0erbia";
+    }
+    80% {
+        content: "NoaB0urbia";
+    }
+    90% {
+        content: "N0aB0urbia";
+    }
+    100% {
+        content: "Noa Bourbia";
+    }
+}
+
+.animated-text::before {
+    content: "1234567890";
+    animation: textTransition 1s steps(10, end) forwards;
+    display: inline-block;
+    white-space: pre;
+}
 
 .dark-background {
     background-color: #000;
@@ -86,4 +128,49 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
+}
+
+hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+}
+.Text-abm {
+    font-size: 25px;
+    color: #000; /* Change text color to black for better contrast */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #fff; /* Add white background */
+    padding: 20px; /* Add padding for spacing inside the box */
+    text-align: center; /* Center the text */
+    border: 2px solid #000; /* Optional: Add a border to the box */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center items vertically */
+    max-width: 1500px; /* Set a max-width for the section */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+.text-abm-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add space between text and image */
+}
+h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+.th3 {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
 }
