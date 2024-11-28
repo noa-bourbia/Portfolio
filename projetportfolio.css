@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 .navbar {
-    background-color: #333;
+    background-color: #000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,11 +36,11 @@ body {
 }
 
 .navbar li a:hover {
-    background-color: #555;
+    background-color: #000;
     color: #fff;
 }
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -80,7 +80,7 @@ input[type="text"], textarea, input[type="file"] {
 button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -90,7 +90,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #000;
 }
 
 .project {
@@ -112,9 +112,52 @@ button:hover {
 
 .project h3 {
     margin-top: 0;
-    color: #333;
+    color: #000;
 }
 
 .project p {
-    color: #666;
+    color: #000;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        padding: 40px 0 20px;
+        font-size: 1.5em;
+    }
+
+    .project-form, .project-list {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar li a {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+    header {
+        padding: 30px 0 15px;
+        font-size: 1.2em;
+    }
+
+    .project-form, .project-list {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px;
+    }
 }
